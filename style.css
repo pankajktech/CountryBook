@@ -5,31 +5,23 @@ html{
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(22, 19, 19);
-  font-family: "Poppins", sans-serif;
-  background-image: url(https://thumbs.dreamstime.com/b/world-color-map-continents-country-name-colorful-s-illustration-40458841.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(rgba(2, 110, 187, 0.5), rgba(255, 60, 0, 0.5));
   background-attachment: fixed;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
 }
 
 h1 {
   color: rgb(0, 0, 0);
   text-align: center;
-  /* margin: 40px; */
 }
 
 #countries {
-  display: flex;
+  display:flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 50px;
-  margin: 20px;
+  margin:0 50px;
 }
 
 .country-info {
@@ -68,7 +60,7 @@ h1 {
 
 #search input {
   text-align: center;
-  width: 300px;
+  width: 500px;
   height: 40px;
   border: none;
   padding: 0 10px;
@@ -79,9 +71,13 @@ h1 {
 
 @media screen and (max-width: 768px) {
   #countries {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #search input{
+    width: 300px;
   }
 }
   
