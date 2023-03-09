@@ -18,18 +18,16 @@ getapi();
 function showCountries(data) {
   const country = document.createElement("div");
   country.classList.add("country");
-  country.innerHTML = `<div class="country-info">
+  country.innerHTML = `
   <img src="${data.flags.svg}" alt="Afghanistan" />
   <h2>${data.name.common}</h2>
   <p><strong> Capital:</strong>${data.capital}</p>
   <p><strong> Region:</strong> ${data.region}</p>
   <p><strong>Population: </strong>${data.population}</p>
-  </div>`;
+  `;
 
   countries.appendChild(country);
 }
-
-
 
 // For Manual Search
 search.addEventListener("input", (e) => {
